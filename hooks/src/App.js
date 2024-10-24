@@ -1,10 +1,12 @@
 import "./App.css";
-import { ReducerCounter } from "./components/ReducerCounter";
+import { ReducerClock } from "./components/ReducerClock";
+// import { ReducerCounter } from "./components/ReducerCounter";
 
 function App() {
   return (
     <div className="App">
-      <ReducerCounter />
+      {/* <ReducerCounter /> */}
+      <ReducerClock />
     </div>
   );
 }
