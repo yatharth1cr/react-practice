@@ -86,6 +86,7 @@ export default function Question() {
           type="button"
           className="btn btn-danger fw-semibold"
           onClick={handleSkip}
+          disabled={presentIndex === 9}
         >
           Skip
         </button>
@@ -99,9 +100,9 @@ export default function Question() {
         </button>
       </div>
 
-      <ul class="flex-wrap list-group list-group-horizontal list-group-item-warning">
+      <ul className="flex-wrap list-group list-group-horizontal list-group-item-warning">
         {selectedOptions.map((el, i) => (
-          <li class="list-group-item">
+          <li className="list-group-item">
             Question {i + 1}: {el}
           </li>
         ))}
